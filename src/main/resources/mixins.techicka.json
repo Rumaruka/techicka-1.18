@@ -1,0 +1,14 @@
+{
+  "required": false,
+  "package": "com.rumaruka.techicka.modules.mixins",
+  "refmap": "mixins.techicka.refmap.json",
+  "mixins": [
+
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8.5"
+}

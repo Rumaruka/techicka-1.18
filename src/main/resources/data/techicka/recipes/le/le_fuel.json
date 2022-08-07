@@ -1,0 +1,8 @@
+{
+  "type": "thermal:magmatic_fuel",
+  "ingredient": {
+    "fluid": "bloodmagic:life_essence_fluid",
+    "amount": 1000
+  },
+  "energy": 100000
+}
