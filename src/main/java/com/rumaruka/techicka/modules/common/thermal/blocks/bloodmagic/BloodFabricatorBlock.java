@@ -43,7 +43,7 @@ public class BloodFabricatorBlock extends BaseEntityBlock {
     @Nullable
     public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level p_153273_, BlockState p_153274_, BlockEntityType<T> p_153275_) {
 
-        return createTickerHelper(p_153275_, TTherBlocks.BloodMagicModule.BLOOD_DYNAMO_TE.get(), BloodDynamoTile::serverTick);
+        return createTickerHelper(p_153275_, TTherBlocks.BloodMagicModule.BLOOD_FABR_TE.get(), BloodFabricatorTile::serverTick);
     }
 
 }

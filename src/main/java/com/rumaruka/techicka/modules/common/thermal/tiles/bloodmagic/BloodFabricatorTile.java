@@ -52,7 +52,7 @@ public class BloodFabricatorTile extends BlockEntity implements ICapabilityProvi
     private TileAltar tileAltar;
     private final LazyOptional<IFluidHandler> holder;
     public BloodFabricatorTile(BlockPos pWorldPosition, BlockState pBlockState) {
-        super(TTherBlocks.BloodMagicModule.BLOOD_DYNAMO_TE.get(), pWorldPosition, pBlockState);
+        super(TTherBlocks.BloodMagicModule.BLOOD_FABR_TE.get(), pWorldPosition, pBlockState);
 
         bloodTank = new FluidTank(8000) {
             @Override
@@ -67,7 +67,7 @@ public class BloodFabricatorTile extends BlockEntity implements ICapabilityProvi
             return this.bloodTank;
         });
     }
-    public static void serverTick(Level pLevel, BlockPos pPos, BlockState pState, BloodDynamoTile pBlockEntity) {
+    public static void serverTick(Level pLevel, BlockPos pPos, BlockState pState, BloodFabricatorTile pBlockEntity) {
 
         if(!pLevel.isClientSide()){
 
@@ -87,7 +87,6 @@ public class BloodFabricatorTile extends BlockEntity implements ICapabilityProvi
 
             if (!flag) {
                 pBlockEntity.bloodTank.fill(new FluidStack(BloodMagicBlocks.LIFE_ESSENCE_FLUID.get(),100), IFluidHandler.FluidAction.EXECUTE);
-                pBlockEntity. energy.extractEnergyInternal(10,false);
 
 
             }
